@@ -1,25 +1,26 @@
-import { images } from "@/assets/img";
-import Title from "@/common/components/Title";
+import { authState } from "@/atom/atomAuth";
+import PortfolioTrackerHidden from "@/components/portfolioTracker/notAuth/PortfolioTrackerHidden";
+import PortfolioTrackerShow from "@/components/portfolioTracker/isAuth/PortfolioTrackerShow";
 import React from "react";
+import { useRecoilState } from "recoil";
 
 type Props = {};
 
 const PortfolioTracker = (props: Props) => {
+  const [auth, setAuth] = useRecoilState(authState);
+  console.log(auth);
   return (
-    <div className="border-t border-l border-[#1b1e28] flex-grow  flex justify-center items-center pt-[139px] pb-40">
-      <div className="px-[215px] py-[130px] flex flex-col items-center bgRect">
-        {/* КАРТИНКА КУВШИНА */}
-        <img className="mb-12" src={images.subtract} alt="" />
-        {/* ЗАГОЛОВОК */}
-        <div className="mb-9">
-          <Title>No Connected Wallet</Title>
-        </div>
-        {/* КОНПКА ПОДКЛЮЧЕНИЯ */}
-        <button className="py-[18px] pl-8 flex justify-center items-center pr-[89px] rounded-casualR border-2 border-white relative after:absolute after:content-arrR after:top-1/2 after:translate-y-[-38%] after:right-[30px]">
-          Connect Wallet
-        </button>
-      </div>
-    </div>
+    <>
+      {auth === true ? (
+        <section className="flex-grow border-t border-l border-[#1b1e28] pr-10">
+          <PortfolioTrackerShow />
+        </section>
+      ) : (
+        <section className="border-t border-l border-[#1b1e28] flex-grow  flex justify-center items-center">
+          <PortfolioTrackerHidden />
+        </section>
+      )}
+    </>
   );
 };
 

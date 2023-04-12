@@ -8,7 +8,7 @@ const Exit = (props: Props) => {
   return (
     <div className="w-full flex justify-center">
       <button
-        onClick={() => setAuth(true)}
+        onClick={() => setAuth(false)}
         className="py-[18px] px-[62px] flex justify-center items-center border border-[#1B1E28] rounded-[15px]"
       >
         Exit

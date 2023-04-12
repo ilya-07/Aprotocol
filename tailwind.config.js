@@ -6,6 +6,7 @@ export default {
       colors: {
         primaryS: "#0050FF",
         secondaryS: "#ADFF00",
+        greyS: "#575A64",
         bgRect:
           "radial-gradient(73.62% 201.19% at 100% 0%, #0041FF 0%, rgba(11, 14, 20, 0) 100%)",
       },
@@ -14,6 +15,7 @@ export default {
       },
       borderRadius: {
         casualR: "60px",
+        smR: "15px",
       },
     },
   },

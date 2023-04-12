@@ -30,8 +30,8 @@ const QuestsSVG: React.FC<IProps> = ({ clicked }) => {
         <path
           d="M14.0532 2.05322L2.05322 14.0532"
           stroke={clicked === NavigationType.Quests ? "#0050ff" : "white"}
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
         />
       </g>
     </svg>
