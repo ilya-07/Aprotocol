@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const twitter = (props: Props) => {
+const TwitterSVG = (props: Props) => {
   return (
     <svg
       width="27"
@@ -19,4 +19,4 @@ const twitter = (props: Props) => {
   );
 };
 
-export default twitter;
+export default TwitterSVG;

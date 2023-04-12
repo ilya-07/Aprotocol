@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const discord = (props: Props) => {
+const DiscordSVG = (props: Props) => {
   return (
     <svg
       width="28"
@@ -19,4 +19,4 @@ const discord = (props: Props) => {
   );
 };
 
-export default discord;
+export default DiscordSVG;

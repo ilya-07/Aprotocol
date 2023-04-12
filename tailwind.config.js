@@ -6,8 +6,14 @@ export default {
       colors: {
         primaryS: "#0050FF",
         secondaryS: "#ADFF00",
-        mainBtn:
-          "radial-gradient(46.96% 180% at 65% 140.83%, #00FF0A 13.03%, rgba(1, 255, 12, 0) 100%) , radial-gradient(31.72% 121.6% at 94.78% 7.5%, #0041FF 16.71%, rgba(0, 65, 255, 0) 100%) , #FFFFFF;",
+        bgRect:
+          "radial-gradient(73.62% 201.19% at 100% 0%, #0041FF 0%, rgba(11, 14, 20, 0) 100%)",
+      },
+      content: {
+        arrR: "url('assets/img/arrR.svg')",
+      },
+      borderRadius: {
+        casualR: "60px",
       },
     },
   },

@@ -1,4 +1,4 @@
-export const TelegramSVG = ({ color = "#434650" }) => {
+const TelegramSVG = ({ color = "#434650" }) => {
   return (
     <svg
       width="27"
@@ -16,3 +16,4 @@ export const TelegramSVG = ({ color = "#434650" }) => {
     </svg>
   );
 };
+export default TelegramSVG;
