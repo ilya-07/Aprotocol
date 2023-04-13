@@ -8,11 +8,12 @@ type Props = {};
 const PortfolioTrackerShow = (props: Props) => {
   return (
     <section className="pt-10 pl-14">
-      {/* ШАПКА СТРАНИЦЫ ПОРТФОЛИО */}
       <div className="mb-10">
-        <div className="mb-10">
+        <div className="mb-10 pr-10">
+          {/* ШАПКА СТРАНИЦЫ ПОРТФОЛИО */}
           <PortfolioHeader />
         </div>
+        {/* ВСЕ ИНЫЕ ДАННЫЕ, ВКЛЮЧАЯ ТАБЫ */}
         <PortfolioData />
       </div>
     </section>

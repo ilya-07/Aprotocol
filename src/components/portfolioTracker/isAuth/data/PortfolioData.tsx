@@ -6,7 +6,7 @@ import TokensPortfolioHead from "../tokens/TokensPortfolioHead";
 import NftPortfolioHead from "../nft/NftPortfolioHead";
 import TransactionPortfolioHead from "../transaction/TransactionPortfolioHead";
 import PortfolioTokens from "../tokens/PortfolioTokens";
-import NftPortfolio from "../nft/NftPortfolio";
+import NftPortfolio from "../nft/PortfolioNft";
 import PortfolioTransaction from "../transaction/PortfolioTransaction";
 import PortfolioTabs from "../tabs/PortfolioTabs";
 
@@ -45,9 +45,12 @@ const PortfolioData = (props: Props) => {
           tab === Tabs.Tokens ? "border  border-[#F9EBEB]" : ""
         }`}
       >
+        {/* ЛЕВАЯ ЧАСТЬ ОТ ТАБОВ, МЕНЯЕТСЯ В ЗАВИСИМОСТИ ОТ ПЕРЕКЛЮЧЕНИЯ */}
         <ShowHead />
+        {/* ТАБЫ */}
         <PortfolioTabs />
       </div>
+      {/* ИНЫЕ ДАННЫЕ НИЖЕ, ЯВЛЯЮТСЯ КЛЮЧЕВЫМИ И МЕНЯЮТСЯ ОТ ПЕРЕКЛЮЧЕНИЯ */}
       <ShowBody />
     </div>
   );

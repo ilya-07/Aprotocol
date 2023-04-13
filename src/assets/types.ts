@@ -11,3 +11,10 @@ export enum Tabs {
   Nft = "nft",
   Transaction = "transaction",
 }
+export interface IProfileTokensData {
+  name: string;
+  wallet: string;
+  price: number;
+  value: number;
+  gain: string;
+}
