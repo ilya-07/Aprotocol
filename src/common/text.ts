@@ -1,5 +1,5 @@
 import { images } from "@/assets/img";
-import { IProfileTokensData } from "@/assets/types";
+import { IProfileTokensData, IQuests } from "@/assets/types";
 
 export const profileTokensData: Array<IProfileTokensData> = [
   {
@@ -54,4 +54,26 @@ export const nftTable: string[] = [
   images.nftTable,
   images.nftTable,
   images.nftTable,
+];
+export const questsText: Array<IQuests> = [
+  {
+    title: "THE MOST ACTIVE USER",
+    text: "Be an active user in Telegram chat and get a chance to win 15, 50, 100 USDT prizes!",
+    img: images.quests1,
+  },
+  {
+    title: "+20% BONUS!",
+    text: "Early investors who are with us until the cap reaches 100BNB will receive a +20% bonus to the initial investment!",
+    img: images.quests2,
+  },
+  {
+    title: "THE BIGGEST CONTRIBUTOR",
+    text: "Invest the most BNB in one transaction during the Presale. You will be the winner of 3 BNB from the Allna Protocol team.",
+    img: images.quests3,
+  },
+  {
+    title: "TWITTER POST",
+    text: "Like the tweet, retweet it, tag three friends, and win a $100 reward!",
+    img: images.quests4,
+  },
 ];

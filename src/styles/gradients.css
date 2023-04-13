@@ -1,0 +1,21 @@
+.blueFormGradient {
+  background: radial-gradient(
+        73.62% 201.19% at 100% 0%,
+        #0041ff 0%,
+        rgba(11, 14, 20, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #0b0e14;
+}
+.greenFormGradient {
+  background: radial-gradient(
+        73.62% 201.19% at 100% 0%,
+        #adff00 0%,
+        rgba(11, 14, 20, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #0b0e14;
+}
+.shadSidebar::after {
+  box-shadow: -3px 3px 53px 16px rgba(14, 2, 255, 0.86);
+}

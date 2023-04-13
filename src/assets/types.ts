@@ -18,3 +18,8 @@ export interface IProfileTokensData {
   value: number;
   gain: string;
 }
+export interface IQuests {
+  title: string;
+  text: string;
+  img: string;
+}

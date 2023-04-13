@@ -12,6 +12,7 @@ export default {
       },
       content: {
         arrR: "url('assets/img/arrR.svg')",
+        arrB: "url('assets/img/arrB.svg')",
       },
       borderRadius: {
         casualR: "60px",

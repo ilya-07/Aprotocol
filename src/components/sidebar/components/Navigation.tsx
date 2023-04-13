@@ -12,11 +12,14 @@ type Props = {};
 
 const Navigation = (props: Props) => {
   const [clicked, setClicked] = React.useState(NavigationType.PortfolioTracker);
-  const activeLink = `flex gap-3 group py-5 px-6 items-center bg-[#101319] rounded-tr-[60px] rounded-br-[60px] border text-primaryS border-[#1B1E28] w-full `;
-  const normalLink = `flex gap-3 py-5 px-6 items-center bg-transparent rounded-[60px] border border-transparent w-full `;
+  const activeLink = `flex  gap-3 duration-500 group py-5 px-6 items-center bg-[#101319] rounded-tr-[60px] 
+  rounded-br-[60px] border text-primaryS border-[#1B1E28] w-full
+  relative after:absolute after:left-7 after:bg-transparent after:top-1/2 after:-translate-y-1/2 after:w-2 after:h-2 shadSidebar
+  `;
+  const normalLink = `flex gap-3 duration-500 py-5 px-6 items-center bg-transparent rounded-[60px] border border-transparent w-full `;
   return (
     <nav>
-      <ul className="flex flex-col text-[18px] font-medium ">
+      <ul className="flex flex-col text-[18px] font-medium duration-500 ">
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
