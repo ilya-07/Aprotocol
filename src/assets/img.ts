@@ -6,6 +6,7 @@ import quests1 from "./img/quests1.jpg";
 import quests2 from "./img/quests2.jpg";
 import quests3 from "./img/quests3.jpg";
 import quests4 from "./img/quests4.jpg";
+import arrM from "./img/arrM.svg";
 export const images = {
   quests1,
   quests2,
@@ -15,4 +16,5 @@ export const images = {
   arrR,
   nftAvatar,
   nftTable,
+  arrM,
 };

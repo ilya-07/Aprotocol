@@ -8,7 +8,7 @@ type Props = {};
 const PortfolioTokens = (props: Props) => {
   return (
     <div>
-      <article className="border border-[#FFF3F3] w-full pr-10 pl-4 flex pb-[65px] pt-5 flex-col gap-4">
+      <article className="w-full pl-4 flex pb-[65px] pt-5 flex-col gap-4">
         {profileTokensData.map((el: IProfileTokensData, i: number) => (
           <table key={i} className="bg-[#1B1E28] w-full rounded-smR">
             <thead className="w-full  block pl-[50px] pr-24 pt-[35px] mb-4">

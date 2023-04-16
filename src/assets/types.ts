@@ -1,3 +1,5 @@
+import BnbSVG from "./icons/bnb";
+
 export enum NavigationType {
   PortfolioTracker = "portfolioTracker",
   Dex = "dex",
@@ -22,4 +24,8 @@ export interface IQuests {
   title: string;
   text: string;
   img: string;
+}
+export interface IModalCurrency {
+  type: string;
+  icon: typeof BnbSVG;
 }

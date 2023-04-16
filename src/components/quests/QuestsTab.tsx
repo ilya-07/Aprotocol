@@ -9,10 +9,12 @@ enum Tub {
 const QuestsTab = (props: Props) => {
   const [tab, setTab] = React.useState(Tub.Ongoing);
   return (
-    <article className="flex py-[8px] px-2 rounded-smR w-fit gap-1 bg-[#1B1E28]">
+    <article className="flex py-[8px] px-2 text-2xl font-semibold rounded-smR w-fit gap-1 bg-[#1B1E28]">
       <button
         className={`${
-          tab === Tub.Ongoing ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tub.Ongoing
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tub.Ongoing)}
       >
@@ -20,7 +22,9 @@ const QuestsTab = (props: Props) => {
       </button>
       <button
         className={`${
-          tab === Tub.Upgoing ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tub.Upgoing
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tub.Upgoing)}
       >
@@ -28,7 +32,9 @@ const QuestsTab = (props: Props) => {
       </button>
       <button
         className={`${
-          tab === Tub.Ended ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tub.Ended
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tub.Ended)}
       >

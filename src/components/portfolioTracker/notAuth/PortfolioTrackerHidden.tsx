@@ -1,6 +1,7 @@
 import { images } from "@/assets/img";
 import { authState } from "@/atom/atomAuth";
 import Title from "@/common/components/Title";
+import ConnectBtn from "@/common/components/ConnectBtn";
 import React from "react";
 import { useRecoilState } from "recoil";
 
@@ -19,12 +20,7 @@ const PortfolioTrackerHidden = (props: Props) => {
           <Title>No Connected Wallet</Title>
         </div>
         {/* КОНПКА ПОДКЛЮЧЕНИЯ */}
-        <button
-          onClick={() => setAuth(true)}
-          className="py-[18px] pl-8 flex justify-center items-center pr-[89px] rounded-casualR border-2 border-white relative after:absolute after:content-arrR after:top-1/2 after:translate-y-[-38%] after:right-[30px]"
-        >
-          Connect Wallet
-        </button>
+        <ConnectBtn />
       </div>
     </div>
   );

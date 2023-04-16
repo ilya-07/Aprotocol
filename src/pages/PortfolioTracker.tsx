@@ -1,6 +1,6 @@
 import { authState } from "@/atom/atomAuth";
 import PortfolioTrackerHidden from "@/components/portfolioTracker/notAuth/PortfolioTrackerHidden";
-import PortfolioTrackerShow from "@/components/portfolioTracker/isAuth/PortfolioTrackerShow";
+import PortfolioTrackerShow from "@/components/portfolioTracker/isAuth";
 import React from "react";
 import { useRecoilState } from "recoil";
 

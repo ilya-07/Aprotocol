@@ -8,10 +8,12 @@ type Props = {};
 const PortfolioTabs = (props: Props) => {
   const [tab, setTab] = useRecoilState(tabState);
   return (
-    <article className="flex py-[8px] px-2 rounded-smR gap-1 bg-[#1B1E28]">
+    <article className="flex py-[8px] px-2 text-2xl font-semibold rounded-smR gap-1 bg-[#1B1E28]">
       <button
         className={`${
-          tab === Tabs.Tokens ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tabs.Tokens
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tabs.Tokens)}
       >
@@ -19,7 +21,9 @@ const PortfolioTabs = (props: Props) => {
       </button>
       <button
         className={`${
-          tab === Tabs.Nft ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tabs.Nft
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tabs.Nft)}
       >
@@ -27,7 +31,9 @@ const PortfolioTabs = (props: Props) => {
       </button>
       <button
         className={`${
-          tab === Tabs.Transaction ? "bg-primaryS rounded-[10px]" : ""
+          tab === Tabs.Transaction
+            ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
+            : ""
         } py-3 px-7`}
         onClick={() => setTab(Tabs.Transaction)}
       >

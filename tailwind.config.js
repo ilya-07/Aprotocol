@@ -13,6 +13,7 @@ export default {
       content: {
         arrR: "url('assets/img/arrR.svg')",
         arrB: "url('assets/img/arrB.svg')",
+        arrM: "url('assets/img/arrM.svg')",
       },
       borderRadius: {
         casualR: "60px",
@@ -20,5 +21,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

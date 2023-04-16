@@ -1,5 +1,8 @@
+import BtcSVG from "@/assets/icons/Btc";
+import BnbSVG from "@/assets/icons/bnb";
+import EthSVG from "@/assets/icons/eth";
 import { images } from "@/assets/img";
-import { IProfileTokensData, IQuests } from "@/assets/types";
+import { IModalCurrency, IProfileTokensData, IQuests } from "@/assets/types";
 
 export const profileTokensData: Array<IProfileTokensData> = [
   {
@@ -76,4 +79,30 @@ export const questsText: Array<IQuests> = [
     text: "Like the tweet, retweet it, tag three friends, and win a $100 reward!",
     img: images.quests4,
   },
+];
+// export const modalCUrrency: string[] = [
+//   "USDT",
+//   "BNB",
+//   "BTC",
+//   "CARDANO",
+//   "DOGE",
+//   "ETH",
+//   "SOL",
+//   "USDC",
+//   "BUSD",
+//   "TON",
+//   "S",
+// ];
+export const modalCUrrency: Array<IModalCurrency> = [
+  { type: "USDT", icon: BnbSVG },
+  { type: "BTC", icon: BtcSVG },
+  { type: "ETH", icon: EthSVG },
+  { type: "BNB", icon: BnbSVG },
+  { type: "USDT", icon: BnbSVG },
+  { type: "BTC", icon: BtcSVG },
+  { type: "ETH", icon: EthSVG },
+  { type: "BNB", icon: BnbSVG },
+  { type: "BNB", icon: BtcSVG },
+  { type: "CARDANO", icon: EthSVG },
+  { type: "USDT", icon: BnbSVG },
 ];
