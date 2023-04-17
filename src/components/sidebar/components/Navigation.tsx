@@ -4,7 +4,7 @@ import DexSVG from "@/assets/icons/dex";
 import { PersonSVG } from "@/assets/icons/person";
 import QuestsSVG from "@/assets/icons/quests";
 import StakingSVG from "@/assets/icons/staking";
-import { NavigationType } from "@/assets/types";
+import { NavigationType } from "@/common/types";
 import React from "react";
 import { NavLink } from "react-router-dom";
 

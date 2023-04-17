@@ -2,7 +2,7 @@ import BtcSVG from "@/assets/icons/Btc";
 import BnbSVG from "@/assets/icons/bnb";
 import EthSVG from "@/assets/icons/eth";
 import { images } from "@/assets/img";
-import { IModalCurrency, IProfileTokensData, IQuests } from "@/assets/types";
+import { IModalCurrency, IProfileTokensData, IQuests } from "@/common/types";
 
 export const profileTokensData: Array<IProfileTokensData> = [
   {

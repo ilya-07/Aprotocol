@@ -1,5 +1,5 @@
 import EthSVG from "@/assets/icons/eth";
-import { IProfileTokensData } from "@/assets/types";
+import { IProfileTokensData } from "@/common/types";
 import { profileTokensData } from "@/common/text";
 import React from "react";
 

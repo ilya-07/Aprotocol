@@ -1,4 +1,5 @@
 import { images } from "@/assets/img";
+import Title from "@/common/components/Title";
 import React from "react";
 
 type Props = {};
@@ -14,7 +15,7 @@ const PortfolioHeader = (props: Props) => {
       />
       {/* ДАННЫЕ ОК КОШЕЛЬКЕ ПОЛЬЗОВАТЕЛЯ */}
       <div className="flex gap-10 flex-grow items-end">
-        <span className="font-semibold text-6xl">261 240 496$</span>
+        <Title size="large">261 240 496$</Title>
         <span className="text-xl text-secondaryS">+2,5% (6 333 222 $)</span>
         <span className="text-xl text-greyS">0xd8da..6045</span>
       </div>

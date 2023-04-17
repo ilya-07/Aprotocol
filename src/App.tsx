@@ -1,4 +1,4 @@
-import { NavigationType } from "./assets/types";
+import { NavigationType } from "./common/types";
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/components/Sidebar";
 import { Routes, Route } from "react-router-dom";

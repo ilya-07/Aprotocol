@@ -1,4 +1,4 @@
-import BnbSVG from "./icons/bnb";
+import BnbSVG from "../assets/icons/bnb";
 
 export enum NavigationType {
   PortfolioTracker = "portfolioTracker",

@@ -1,8 +1,10 @@
+import Modal from "@/common/components/Modal";
 import React from "react";
 
-type Props = {};
-
-const BridgeNetwork = (props: Props) => {
+interface IProps {
+  setColor: (el: boolean) => void;
+}
+const BridgeNetwork: React.FC<IProps> = ({ setColor }) => {
   return (
     <div className="w-full">
       <div className="flex blueModal justify-between w-full pl-[64px] py-[35px] pr-[22px] border border-primaryS rounded-[20px] mb-[30px]">
@@ -12,7 +14,7 @@ const BridgeNetwork = (props: Props) => {
         </div>
         <div>
           <h3 className="mb-[30px] text-3xl mr-12">Select a network</h3>
-          <div>1</div>
+          <Modal setColor={setColor} />
         </div>
       </div>
       <div className="flex greenModal justify-between w-full  pl-[64px] py-[35px] pr-[22px] border border-secondaryS rounded-[20px]">
@@ -22,7 +24,7 @@ const BridgeNetwork = (props: Props) => {
         </div>
         <div>
           <h3 className="mb-[30px] text-3xl mr-12">Select a network</h3>
-          <div>2</div>
+          <Modal setColor={setColor} />
         </div>
       </div>
     </div>

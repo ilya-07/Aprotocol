@@ -1,4 +1,4 @@
-import { Tabs } from "@/assets/types";
+import { Tabs } from "@/common/types";
 import { tabState } from "@/atom/atomTab";
 import React from "react";
 import { useRecoilState } from "recoil";

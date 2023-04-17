@@ -1,5 +1,5 @@
 import React from "react";
-import { NavigationType } from "../types";
+import { NavigationType } from "../../common/types";
 
 interface IProps {
   clicked: NavigationType;
