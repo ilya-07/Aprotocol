@@ -1,3 +1,5 @@
+import BtcSVG from "@/assets/icons/Btc";
+import FilterArrSVG from "@/assets/icons/filterArr";
 import JugSVG from "@/assets/icons/jug";
 import React from "react";
 
@@ -19,15 +21,26 @@ const DexSwap = (props: Props) => {
             <span>1</span>
             <div className="flex items-center gap-[10px]">
               <span>~0.00$</span>
-              <span>FWT</span>
+              <div className="flex gap-[5px] items-center px-[9px] py-[7px] rounded-[10px] bg-[#0B0E14]">
+                <span className="w-5 h-5">
+                  <BtcSVG />
+                </span>
+                <span>FWT</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="mb-6">
-          <span>9</span>
-          <span className="text-sm ml-3 font-medium">
-            1 FWT = 0.004266433231 BUSD
-          </span>
+        <div className="mb-6 flex justify-between items-center w-full">
+          <div className="flex items-center gap-7">
+            <span>9</span>
+            <span className="text-sm ml-3 font-medium flex items-center gap-[10px]">
+              <span>1 FWT = 0.004266433231 BUSD</span>
+              <FilterArrSVG />
+            </span>
+          </div>
+          <div className="w-9 h-9 rounded-[50%] rotate-90 scale-125 bg-[#141820] flex items-center justify-center">
+            <FilterArrSVG />
+          </div>
         </div>
         {/* /vgbf */}
         <div className="flex flex-col font-medium text-2xl items-center justify-between bg-[#141820]  px-3 py-[10px] rounded-[10px]">
@@ -40,7 +53,12 @@ const DexSwap = (props: Props) => {
             <span>1</span>
             <div className="flex items-center gap-[10px]">
               <span>~0.00$</span>
-              <span>FWT</span>
+              <div className="flex gap-[5px] items-center px-[9px] py-[7px] rounded-[10px] bg-[#0B0E14]">
+                <span className="w-5 h-5">
+                  <BtcSVG />
+                </span>
+                <span>FWT</span>
+              </div>
             </div>
           </div>
         </div>
