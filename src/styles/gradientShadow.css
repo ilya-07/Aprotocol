@@ -18,6 +18,13 @@
 }
 .shadSidebar::after {
   box-shadow: -3px 3px 53px 16px rgba(14, 2, 255, 0.86);
+  position: absolute;
+  left: 28px;
+  background-color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 8px;
+  height: 8px;
 }
 .stakingGradient {
   background: radial-gradient(

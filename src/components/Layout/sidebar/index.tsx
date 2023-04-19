@@ -1,7 +1,6 @@
-import React from "react";
-import SidebarHeader from "./SidebarHeader";
-import Navigation from "./Navigation";
-import Exit from "./exit/Exit";
+import SidebarHeader from "./components/SidebarHeader";
+import Navigation from "./components/Navigator";
+import Exit from "./components/exit/Exit";
 
 type Props = {};
 

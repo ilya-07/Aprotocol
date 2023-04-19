@@ -1,10 +1,8 @@
 import { authState } from "@/atom/atomAuth";
-import React from "react";
-import { useRecoilState } from "recoil";
-type Props = {};
+import { useSetRecoilState } from "recoil";
 
-const Exit = (props: Props) => {
-  const [auth, setAuth] = useRecoilState(authState);
+const Exit = () => {
+  const setAuth = useSetRecoilState(authState);
   return (
     <div className="w-full flex justify-center">
       <button

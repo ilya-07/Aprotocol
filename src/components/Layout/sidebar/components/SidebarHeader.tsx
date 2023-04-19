@@ -1,5 +1,4 @@
 import React from "react";
-import mainLogo from "../../../../public/mainLogo.svg";
 import TelegramSVG from "@/assets/icons/telegram";
 import DiscordSVG from "@/assets/icons/discord";
 import TwitterSVG from "@/assets/icons/twitter";
@@ -11,7 +10,7 @@ const SidebarHeader = (props: Props) => {
   return (
     <div className="pl-[33px] pr-[69px]">
       <Link to="/">
-        <img className="mb-[30px]" src={mainLogo} alt="" />
+        <img className="mb-[30px]" src="/mainLogo.svg" alt="" />
       </Link>
       <div className="flex w-full justify-between">
         <TelegramSVG />

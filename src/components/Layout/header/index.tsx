@@ -1,9 +1,9 @@
+import { useRecoilState } from "recoil";
+import { authState } from "@/atom/atomAuth";
+
 import BtcSVG from "@/assets/icons/Btc";
 import BnbSVG from "@/assets/icons/bnb";
 import EthSVG from "@/assets/icons/eth";
-import { authState } from "@/atom/atomAuth";
-import React from "react";
-import { useRecoilState } from "recoil";
 
 type Props = {};
 const headerText = [
@@ -26,8 +26,10 @@ const headerText = [
     white: false,
   },
 ];
+
 const Header = (props: Props) => {
   const [auth, setAuth] = useRecoilState(authState);
+  
   return (
     <header className="py-5 px-6 flex items-center gap-[55px]">
       <div className="flex justify-between flex-grow gap-[40px]">

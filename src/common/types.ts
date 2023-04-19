@@ -8,6 +8,7 @@ export enum NavigationType {
   AiAudit = "aiaudit",
   Quests = "quests",
 }
+
 export enum Tabs {
   Tokens = "tokens",
   Nft = "nft",
