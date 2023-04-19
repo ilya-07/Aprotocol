@@ -29,3 +29,7 @@ export interface IModalCurrency {
   type: string;
   icon: typeof BnbSVG;
 }
+export interface IPoolInfo {
+  price: string;
+  data: string;
+}

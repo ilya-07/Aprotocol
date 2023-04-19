@@ -1,5 +1,4 @@
 import React from "react";
-import "@/styles/gradients.css";
 
 type Props = {};
 const AiAuditsForm = (props: Props) => {

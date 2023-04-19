@@ -7,35 +7,3 @@
     font-family: "Montserrat", sans-serif;
   }
 }
-.bgBlack {
-  background: radial-gradient(
-        129.6% 58.24% at -14% 46.62%,
-        rgba(0, 80, 255, 0.16) 0%,
-        rgba(0, 80, 255, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    #0b0e14;
-}
-.headerBtn {
-  background: radial-gradient(
-        46.96% 180% at 65% 140.83%,
-        #00ff0a 13.03%,
-        rgba(1, 255, 12, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    radial-gradient(
-        31.72% 121.6% at 94.78% 7.5%,
-        #0041ff 16.71%,
-        rgba(0, 65, 255, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    #ffffff;
-  border-radius: 15px;
-}
-.bgRect {
-  background: radial-gradient(
-    73.62% 101.19% at 100% 0%,
-    #0041ff 0%,
-    rgba(11, 14, 20, 0) 100%
-  );
-}

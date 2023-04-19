@@ -2,7 +2,12 @@ import BtcSVG from "@/assets/icons/Btc";
 import BnbSVG from "@/assets/icons/bnb";
 import EthSVG from "@/assets/icons/eth";
 import { images } from "@/assets/img";
-import { IModalCurrency, IProfileTokensData, IQuests } from "@/common/types";
+import {
+  IModalCurrency,
+  IPoolInfo,
+  IProfileTokensData,
+  IQuests,
+} from "@/common/types";
 
 export const profileTokensData: Array<IProfileTokensData> = [
   {
@@ -80,19 +85,6 @@ export const questsText: Array<IQuests> = [
     img: images.quests4,
   },
 ];
-// export const modalCUrrency: string[] = [
-//   "USDT",
-//   "BNB",
-//   "BTC",
-//   "CARDANO",
-//   "DOGE",
-//   "ETH",
-//   "SOL",
-//   "USDC",
-//   "BUSD",
-//   "TON",
-//   "S",
-// ];
 export const modalCUrrency: Array<IModalCurrency> = [
   { type: "USDT", icon: BnbSVG },
   { type: "BTC", icon: BtcSVG },
@@ -105,4 +97,38 @@ export const modalCUrrency: Array<IModalCurrency> = [
   { type: "BNB", icon: BtcSVG },
   { type: "CARDANO", icon: EthSVG },
   { type: "USDT", icon: BnbSVG },
+];
+export const poolInfo: Array<IPoolInfo> = [
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
+  {
+    price: "$105.31K",
+    data: "16.07.2022, 17:25",
+  },
 ];

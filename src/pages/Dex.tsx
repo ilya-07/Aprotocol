@@ -5,7 +5,7 @@ type Props = {};
 
 const Dex = (props: Props) => {
   return (
-    <div className="border-t border-l border-[#1b1e28] flex-grow">
+    <div className="border-t border-l border-[#1b1e28] flex-grow ">
       <DexPage />
     </div>
   );
