@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const FilterArrSVG = (props: Props) => {
+export const FilterArrIcon: FC = () => {
   return (
     <svg
       width="16"
@@ -24,5 +22,3 @@ const FilterArrSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default FilterArrSVG;

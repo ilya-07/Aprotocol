@@ -1,13 +1,12 @@
-import React from "react";
+import { FC, useState } from "react";
 
-type Props = {};
 enum Tub {
   Ongoing = "ongoing",
   Upgoing = "upgoing",
   Ended = "ended",
 }
-const QuestsTab = (props: Props) => {
-  const [tab, setTab] = React.useState(Tub.Ongoing);
+const QuestsTab: FC = () => {
+  const [tab, setTab] = useState(Tub.Ongoing);
   return (
     <article className="flex py-[8px] px-2 text-2xl font-semibold rounded-smR w-fit gap-1 bg-[#1B1E28]">
       <button

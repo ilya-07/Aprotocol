@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const StakingBody = (props: Props) => {
+const StakingBody: FC = () => {
   return (
     <>
       <article className="mb-[30px] rounded-[20px] p-6 border border-primaryS stakingGradient">

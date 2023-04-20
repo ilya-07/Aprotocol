@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const DexHistoryTable = (props: Props) => {
+const DexHistoryTable: FC = () => {
   return <div>DexHistoryTable</div>;
 };
 

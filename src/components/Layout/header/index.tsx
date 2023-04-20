@@ -1,35 +1,33 @@
 import { useRecoilState } from "recoil";
 import { authState } from "@/atom/atomAuth";
 
-import BtcSVG from "@/assets/icons/Btc";
-import BnbSVG from "@/assets/icons/bnb";
-import EthSVG from "@/assets/icons/eth";
+import { BnbIcon, BtcIcon, EthIcon } from "@/assets/icons";
 
 type Props = {};
 const headerText = [
   {
     text: "Bitcoin BTC",
     price: 28.39,
-    icon: <BtcSVG />,
+    icon: <BtcIcon />,
     white: false,
   },
   {
     text: "Ethereum ETH",
     price: 1.81,
-    icon: <EthSVG />,
+    icon: <EthIcon />,
     white: true,
   },
   {
     text: "BNB BNB",
     price: 315.2,
-    icon: <BnbSVG />,
+    icon: <BnbIcon />,
     white: false,
   },
 ];
 
 const Header = (props: Props) => {
   const [auth, setAuth] = useRecoilState(authState);
-  
+
   return (
     <header className="py-5 px-6 flex items-center gap-[55px]">
       <div className="flex justify-between flex-grow gap-[40px]">

@@ -1,12 +1,13 @@
-import { authState } from "@/atom/atomAuth";
-import PortfolioTrackerHidden from "@/components/portfolioTracker/notAuth/PortfolioTrackerHidden";
-import PortfolioTrackerShow from "@/components/portfolioTracker/isAuth";
-import React from "react";
+import { FC } from "react";
+
 import { useRecoilState } from "recoil";
 
-type Props = {};
+import { authState } from "@/atom/atomAuth";
 
-const PortfolioTracker = (props: Props) => {
+import PortfolioTrackerHidden from "@/components/portfolioTracker/notAuth/PortfolioTrackerHidden";
+import PortfolioTrackerShow from "@/components/portfolioTracker/isAuth";
+
+const PortfolioTracker: FC = () => {
   const [auth, setAuth] = useRecoilState(authState);
   console.log(auth);
   return (

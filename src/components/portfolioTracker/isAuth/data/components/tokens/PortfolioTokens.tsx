@@ -1,11 +1,11 @@
-import EthSVG from "@/assets/icons/eth";
+import { FC } from "react";
+
 import { IProfileTokensData } from "@/common/types";
 import { profileTokensData } from "@/common/text";
-import React from "react";
 
-type Props = {};
+import { EthIcon } from "@/assets/icons";
 
-const PortfolioTokens = (props: Props) => {
+const PortfolioTokens: FC = () => {
   return (
     <div>
       <article className="w-full pl-4 flex pb-[65px] pt-5 flex-col gap-4">
@@ -24,13 +24,13 @@ const PortfolioTokens = (props: Props) => {
                 <td>
                   <div className="flex gap-4 items-center mb-3">
                     <div className="w-[34px] h-[34px]">
-                      <EthSVG />
+                      <EthIcon />
                     </div>
                     <span>{el.name}</span>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="w-5 h-5">
-                      <EthSVG />
+                      <EthIcon />
                     </div>
                     <span>{el.name}</span>
                   </div>

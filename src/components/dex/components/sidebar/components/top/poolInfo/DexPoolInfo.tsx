@@ -1,9 +1,8 @@
+import { FC } from "react";
+
 import { poolInfo } from "@/common/text";
-import React from "react";
 
-type Props = {};
-
-const DexPoolInfo = (props: Props) => {
+const DexPoolInfo: FC = () => {
   return (
     <div className="rounded-smR bg-[#1B1E28] px-[15px] flex flex-col items-center pt-8 pb-[18px]">
       <h3 className="mb-6 font-medium text-2xl">PancakeSwap V2 Pool Info</h3>

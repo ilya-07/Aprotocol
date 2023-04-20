@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const EthSVG = (props: Props) => {
+export const EthIcon: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -56,5 +54,3 @@ const EthSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default EthSVG;

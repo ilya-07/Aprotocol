@@ -1,9 +1,8 @@
+import { FC } from "react";
+
 import { nftTable } from "@/common/text";
-import React from "react";
 
-type Props = {};
-
-const NftPortfolio = (props: Props) => {
+const NftPortfolio: FC = () => {
   return (
     <div className="flex flex-wrap gap-[30px]">
       {nftTable.map((el: string, i: number) => (

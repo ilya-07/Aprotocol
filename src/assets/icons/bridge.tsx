@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 interface IProps {
   className?: string;
   color?: string;
 }
 
-export const BridgeIcon = ({ className, color }: IProps) => {
+export const BridgeIcon: FC = ({ className, color }: IProps) => {
   return (
     <svg
       width="20"

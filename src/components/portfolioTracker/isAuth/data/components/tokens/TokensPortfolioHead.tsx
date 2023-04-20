@@ -1,9 +1,8 @@
+import { FC } from "react";
+
 import Title from "@/common/components/Title";
-import React from "react";
 
-type Props = {};
-
-const TokensPortfolioHead = (props: Props) => {
+const TokensPortfolioHead: FC = () => {
   return (
     <div>
       <div className="flex gap-[30px] mb-6 items-end">

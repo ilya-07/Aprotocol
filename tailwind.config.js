@@ -17,6 +17,9 @@ export default {
         casualR: "60px",
         smR: "15px",
       },
+      screens: {
+        xlg: "1800px",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],

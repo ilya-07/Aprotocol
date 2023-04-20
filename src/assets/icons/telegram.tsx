@@ -1,4 +1,8 @@
-const TelegramSVG = ({ color = "#434650" }) => {
+import { FC } from "react";
+interface IProps {
+  color?: string;
+}
+export const TelegramIcon: FC<IProps> = ({ color = "#434650" }) => {
   return (
     <svg
       width="27"
@@ -16,4 +20,3 @@ const TelegramSVG = ({ color = "#434650" }) => {
     </svg>
   );
 };
-export default TelegramSVG;

@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 interface IProps {
   className?: string;
   color?: string;
 }
 
-export const StakingIcon = ({ className, color }: IProps) => {
+export const StakingIcon: FC = ({ className, color }: IProps) => {
   return (
     <svg
       width="15"
@@ -22,4 +24,3 @@ export const StakingIcon = ({ className, color }: IProps) => {
     </svg>
   );
 };
-

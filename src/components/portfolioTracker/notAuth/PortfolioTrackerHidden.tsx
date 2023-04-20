@@ -1,13 +1,12 @@
+import { FC } from "react";
+import { useRecoilState } from "recoil";
+
 import { images } from "@/assets/img";
 import { authState } from "@/atom/atomAuth";
 import Title from "@/common/components/Title";
 import ConnectBtn from "@/common/components/ConnectBtn";
-import React from "react";
-import { useRecoilState } from "recoil";
 
-type Props = {};
-
-const PortfolioTrackerHidden = (props: Props) => {
+const PortfolioTrackerHidden: FC = () => {
   const [auth, setAuth] = useRecoilState(authState);
   console.log(auth);
   return (

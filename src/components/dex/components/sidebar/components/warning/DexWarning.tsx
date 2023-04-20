@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const DexWarning = (props: Props) => {
+const DexWarning: FC = () => {
   return (
     <div className="py-5 pl-6 pr-9 rounded-smR bg-[#1B1E28]">
       <span className="w-[50px] h-[50px] flex justify-center items-center bg-[#141820] font-medium text-[35px] mb-[10px] rounded-[50%]">

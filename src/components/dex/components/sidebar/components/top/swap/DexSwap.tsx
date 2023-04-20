@@ -1,11 +1,7 @@
-import BtcSVG from "@/assets/icons/Btc";
-import FilterArrSVG from "@/assets/icons/filterArr";
-import JugSVG from "@/assets/icons/jug";
-import React from "react";
+import { BtcIcon, FilterArrIcon, JugIcon } from "@/assets/icons";
+import { FC } from "react";
 
-type Props = {};
-
-const DexSwap = (props: Props) => {
+const DexSwap: FC = () => {
   return (
     <div className="bg-[#1B1E28] rounded-smR px-[15px] pt-8 pb-5 flex flex-col items-center">
       <h3 className="text-2xl font-semibold mb-6">Swap</h3>
@@ -14,7 +10,7 @@ const DexSwap = (props: Props) => {
           <div className="flex justify-between w-full mb-1">
             <span className="">Max</span>
             <span className="flex">
-              <JugSVG /> 0
+              <JugIcon /> 0
             </span>
           </div>
           <div className="flex justify-between items-center w-full">
@@ -23,7 +19,7 @@ const DexSwap = (props: Props) => {
               <span>~0.00$</span>
               <div className="flex gap-[5px] items-center px-[9px] py-[7px] rounded-[10px] bg-[#0B0E14]">
                 <span className="w-5 h-5">
-                  <BtcSVG />
+                  <BtcIcon />
                 </span>
                 <span>FWT</span>
               </div>
@@ -35,18 +31,18 @@ const DexSwap = (props: Props) => {
             <span>9</span>
             <span className="text-sm ml-3 font-medium flex items-center gap-[10px]">
               <span>1 FWT = 0.004266433231 BUSD</span>
-              <FilterArrSVG />
+              <FilterArrIcon />
             </span>
           </div>
           <div className="w-9 h-9 rounded-[50%] rotate-90 scale-125 bg-[#141820] flex items-center justify-center">
-            <FilterArrSVG />
+            <FilterArrIcon />
           </div>
         </div>
         {/* /vgbf */}
         <div className="flex flex-col font-medium text-2xl items-center justify-between bg-[#141820]  px-3 py-[10px] rounded-[10px]">
           <div className="flex justify-end w-full mb-1">
             <span className="flex">
-              <JugSVG /> 0
+              <JugIcon /> 0
             </span>
           </div>
           <div className="flex justify-between items-center w-full">
@@ -55,7 +51,7 @@ const DexSwap = (props: Props) => {
               <span>~0.00$</span>
               <div className="flex gap-[5px] items-center px-[9px] py-[7px] rounded-[10px] bg-[#0B0E14]">
                 <span className="w-5 h-5">
-                  <BtcSVG />
+                  <BtcIcon />
                 </span>
                 <span>FWT</span>
               </div>

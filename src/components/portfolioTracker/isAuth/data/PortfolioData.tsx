@@ -1,7 +1,9 @@
+import { FC } from "react";
+import { useRecoilState } from "recoil";
+
 import { Tabs } from "@/common/types";
 import { tabState } from "@/atom/atomTab";
-import React from "react";
-import { useRecoilState } from "recoil";
+
 import TokensPortfolioHead from "./components/tokens/TokensPortfolioHead";
 import NftPortfolioHead from "./components/nft/NftPortfolioHead";
 import TransactionPortfolioHead from "./components/transaction/TransactionPortfolioHead";
@@ -10,9 +12,7 @@ import NftPortfolio from "./components/nft/PortfolioNft";
 import PortfolioTransaction from "./components/transaction/PortfolioTransaction";
 import PortfolioTabs from "../tabs/PortfolioTabs";
 
-type Props = {};
-
-const PortfolioData = (props: Props) => {
+const PortfolioData: FC = () => {
   const [tab, setTab] = useRecoilState(tabState);
   const ShowHead = () => {
     if (tab === Tabs.Tokens) {

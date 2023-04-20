@@ -1,7 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-const AiAuditsForm = (props: Props) => {
+const AiAuditsForm: FC = () => {
   return (
     <div>
       <div>

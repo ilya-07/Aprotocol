@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const CloseSVG = (props: Props) => {
+export const CloseIcon: FC = () => {
   return (
     <svg
       width="19"
@@ -20,5 +18,3 @@ const CloseSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default CloseSVG;

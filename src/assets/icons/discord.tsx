@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const DiscordSVG = (props: Props) => {
+export const DiscordIcon: FC = () => {
   return (
     <svg
       width="28"
@@ -18,5 +16,3 @@ const DiscordSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default DiscordSVG;

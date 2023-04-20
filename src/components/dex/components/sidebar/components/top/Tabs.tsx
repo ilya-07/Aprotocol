@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 interface IProps {
   tab: Tub;
@@ -9,7 +9,7 @@ enum Tub {
   PoolInfo = "PoolInfo",
 }
 
-const Tabs: React.FC<IProps> = ({ tab, setTab }) => {
+const Tabs: FC<IProps> = ({ tab, setTab }) => {
   return (
     <article className="flex py-[8px] px-2 rounded-smR w-fit text-2xl font-semibold gap-1 bg-[#1B1E28]">
       <button
@@ -17,7 +17,7 @@ const Tabs: React.FC<IProps> = ({ tab, setTab }) => {
           tab === Tub.Swap
             ? "bg-primaryS rounded-[10px] shadow-lg shadow-primaryS"
             : ""
-        } py-3 px-[55px]  flex items-center justify-center`}
+        } py-3 px-10 xlg:px-[55px]  flex items-center justify-center`}
         onClick={() => setTab(Tub.Swap)}
       >
         Swap

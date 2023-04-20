@@ -1,10 +1,9 @@
+import { FC, useState } from "react";
+
 import ConnectBtn from "@/common/components/ConnectBtn";
-import React from "react";
 
-type Props = {};
-
-const StakingCulc = (props: Props) => {
-  const [value, setValue] = React.useState<string>("");
+const StakingCulc: FC = () => {
+  const [value, setValue] = useState<string>("");
   return (
     <article>
       <div className="flex items-center mb-9 font-semibold justify-between">

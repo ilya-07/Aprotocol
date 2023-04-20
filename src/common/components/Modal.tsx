@@ -1,16 +1,19 @@
-import React from "react";
-import CloseSVG from "@/assets/icons/close";
+import { FC, useState } from "react";
+
+import { CloseIcon } from "@/assets/icons";
+
 import { images } from "@/assets/img";
+
 import { IModalCurrency } from "@/common/types";
 import { modalCUrrency } from "@/common/text";
 
 interface IProps {
   setColor: (el: boolean) => void;
 }
-const Modal: React.FC<IProps> = ({ setColor }) => {
-  const [select, setSelect] = React.useState(modalCUrrency[0]);
-  const [show, setShow] = React.useState<boolean>(false);
-  const [search, setSearch] = React.useState("");
+const Modal: FC<IProps> = ({ setColor }) => {
+  const [select, setSelect] = useState(modalCUrrency[0]);
+  const [show, setShow] = useState<boolean>(false);
+  const [search, setSearch] = useState("");
   const handleSelected = (el: IModalCurrency): void => {
     setSelect(el);
     setShow(false);
@@ -53,7 +56,7 @@ const Modal: React.FC<IProps> = ({ setColor }) => {
               setSearch("");
             }}
           >
-            <CloseSVG />
+            <CloseIcon />
           </div>
         </div>
         <input

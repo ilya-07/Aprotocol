@@ -1,13 +1,12 @@
-import React from "react";
+import { FC } from "react";
+
 import DexHistoryHead from "./head/DexHistoryHead";
 import DexHistoryTable from "./table/DexHistoryTable";
 
-type Props = {};
-
-const DexHistory = (props: Props) => {
+const DexHistory: FC = () => {
   return (
-    <div>
-      <div className="mb-6">
+    <div className="w-full">
+      <div className="mb-6 w-full">
         <DexHistoryHead />
       </div>
       <div>

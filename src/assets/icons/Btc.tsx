@@ -1,6 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-const BtcSVG = () => {
+export const BtcIcon: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,5 +32,3 @@ const BtcSVG = () => {
     </svg>
   );
 };
-
-export default BtcSVG;

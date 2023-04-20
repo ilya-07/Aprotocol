@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const TwitterSVG = (props: Props) => {
+export const TwitterIcon: FC = () => {
   return (
     <svg
       width="27"
@@ -18,5 +16,3 @@ const TwitterSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default TwitterSVG;

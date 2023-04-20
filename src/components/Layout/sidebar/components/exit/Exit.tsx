@@ -1,7 +1,10 @@
+import { FC } from "react";
+
 import { authState } from "@/atom/atomAuth";
+
 import { useSetRecoilState } from "recoil";
 
-const Exit = () => {
+const Exit: FC = () => {
   const setAuth = useSetRecoilState(authState);
   return (
     <div className="w-full flex justify-center">

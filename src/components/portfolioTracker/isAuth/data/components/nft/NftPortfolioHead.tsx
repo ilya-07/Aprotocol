@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const NftPortfolioHead = (props: Props) => {
+const NftPortfolioHead: FC = () => {
   return (
     <div className="flex gap-6 font-bold items-end">
       <span className="text-[30px]">261 240 496$</span>

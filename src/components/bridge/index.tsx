@@ -1,12 +1,12 @@
-import React from "react";
+import { FC, useState } from "react";
+
 import BridgeCurrency from "./components/BridgeCurrency";
 import BridgeNetwork from "./components/BridgeNetwork";
+
 import ConnectBtn from "@/common/components/ConnectBtn";
 
-type Props = {};
-
-const BridgePage = (props: Props) => {
-  const [color, setColor] = React.useState(false);
+const BridgePage: FC = () => {
+  const [color, setColor] = useState(false);
   return (
     <div
       className={`${

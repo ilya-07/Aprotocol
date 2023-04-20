@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const FairSVG = (props: Props) => {
+export const FairIcon: FC = () => {
   return (
     <svg
       width="21"
@@ -18,5 +16,3 @@ const FairSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default FairSVG;

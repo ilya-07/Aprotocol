@@ -1,15 +1,11 @@
-import CloseSVG from "@/assets/icons/close";
-import { images } from "@/assets/img";
-import { IModalCurrency } from "@/common/types";
-import { modalCUrrency } from "@/common/text";
-import React from "react";
+import { FC } from "react";
 import Modal from "@/common/components/Modal";
 
 interface IProps {
   setColor: (el: boolean) => void;
 }
 
-const BridgeCurrency: React.FC<IProps> = ({ setColor }) => {
+const BridgeCurrency: FC<IProps> = ({ setColor }) => {
   return (
     <div className="flex justify-between font-semibold w-full gap-[164px]">
       <div>

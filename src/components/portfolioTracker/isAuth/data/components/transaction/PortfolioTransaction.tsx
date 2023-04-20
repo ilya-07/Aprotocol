@@ -1,11 +1,8 @@
-import BtcSVG from "@/assets/icons/Btc";
-import BnbSVG from "@/assets/icons/bnb";
-import EthSVG from "@/assets/icons/eth";
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
+import { BnbIcon, EthIcon } from "@/assets/icons";
 
-const PortfolioTransaction = (props: Props) => {
+const PortfolioTransaction: FC = () => {
   return (
     <div className="flex flex-col gap-20">
       <div>
@@ -21,7 +18,7 @@ const PortfolioTransaction = (props: Props) => {
                 <span>Receive</span>
                 <span className="flex gap-[10px]">
                   <span className="max-w-[34px] max-h-[34px]">
-                    <BnbSVG />
+                    <BnbIcon />
                   </span>
                   <span>BSC</span>
                 </span>
@@ -33,7 +30,7 @@ const PortfolioTransaction = (props: Props) => {
               <div className="flex gap-[10px]">
                 <span>From</span>
                 <span className="w-[34px] h-[34px]">
-                  <EthSVG />
+                  <EthIcon />
                 </span>
                 <span className="text-[#a1a3a6]">0xd8da..6045</span>
               </div>
@@ -58,7 +55,7 @@ const PortfolioTransaction = (props: Props) => {
                 <span>Receive</span>
                 <span className="flex gap-[10px]">
                   <span className="max-w-[34px] max-h-[34px]">
-                    <BnbSVG />
+                    <BnbIcon />
                   </span>
                   <span>BSC</span>
                 </span>
@@ -70,7 +67,7 @@ const PortfolioTransaction = (props: Props) => {
               <div className="flex gap-[10px]">
                 <span>From</span>
                 <span className="w-[34px] h-[34px]">
-                  <EthSVG />
+                  <EthIcon />
                 </span>
                 <span className="text-[#a1a3a6]">0xd8da..6045</span>
               </div>

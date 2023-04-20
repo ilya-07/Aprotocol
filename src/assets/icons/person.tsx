@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 interface IProps {
   className?: string;
   color?: string;
 }
 
-export const PersonIcon = ({ className, color }: IProps) => {
+export const PersonIcon: FC = ({ className, color }: IProps) => {
   return (
     <svg
       width="18"

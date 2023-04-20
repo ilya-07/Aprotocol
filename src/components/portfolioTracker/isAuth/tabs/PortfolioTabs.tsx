@@ -1,11 +1,10 @@
-import { Tabs } from "@/common/types";
-import { tabState } from "@/atom/atomTab";
-import React from "react";
+import { FC } from "react";
 import { useRecoilState } from "recoil";
 
-type Props = {};
+import { Tabs } from "@/common/types";
+import { tabState } from "@/atom/atomTab";
 
-const PortfolioTabs = (props: Props) => {
+const PortfolioTabs: FC = () => {
   const [tab, setTab] = useRecoilState(tabState);
   return (
     <article className="flex py-[8px] px-2 text-2xl font-semibold rounded-smR gap-1 bg-[#1B1E28]">

@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 interface IProps {
   className?: string;
   color?: string;
 }
 
-export const DexIcon = ({ className, color }: IProps) => {
+export const DexIcon: FC = ({ className, color }: IProps) => {
   return (
     <svg
       width="16"

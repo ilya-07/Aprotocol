@@ -1,11 +1,9 @@
-import { images } from "@/assets/img";
-import React from "react";
+import { FC } from "react";
+
 import PortfolioHeader from "./header/portfolioHeader";
 import PortfolioData from "./data/PortfolioData";
 
-type Props = {};
-
-const PortfolioTrackerShow = (props: Props) => {
+const PortfolioTrackerShow: FC = () => {
   return (
     <section className="pt-10 pl-14">
       <div className="mb-10">

@@ -1,7 +1,7 @@
-import BtcSVG from "@/assets/icons/Btc";
-import BnbSVG from "@/assets/icons/bnb";
-import EthSVG from "@/assets/icons/eth";
+import { BnbIcon, BtcIcon, EthIcon } from "@/assets/icons";
+
 import { images } from "@/assets/img";
+
 import {
   IModalCurrency,
   IPoolInfo,
@@ -86,17 +86,17 @@ export const questsText: Array<IQuests> = [
   },
 ];
 export const modalCUrrency: Array<IModalCurrency> = [
-  { type: "USDT", icon: BnbSVG },
-  { type: "BTC", icon: BtcSVG },
-  { type: "ETH", icon: EthSVG },
-  { type: "BNB", icon: BnbSVG },
-  { type: "USDT", icon: BnbSVG },
-  { type: "BTC", icon: BtcSVG },
-  { type: "ETH", icon: EthSVG },
-  { type: "BNB", icon: BnbSVG },
-  { type: "BNB", icon: BtcSVG },
-  { type: "CARDANO", icon: EthSVG },
-  { type: "USDT", icon: BnbSVG },
+  { type: "USDT", icon: BnbIcon },
+  { type: "BTC", icon: BtcIcon },
+  { type: "ETH", icon: EthIcon },
+  { type: "BNB", icon: BnbIcon },
+  { type: "USDT", icon: BnbIcon },
+  { type: "BTC", icon: BtcIcon },
+  { type: "ETH", icon: EthIcon },
+  { type: "BNB", icon: BnbIcon },
+  { type: "BNB", icon: BtcIcon },
+  { type: "CARDANO", icon: EthIcon },
+  { type: "USDT", icon: BnbIcon },
 ];
 export const poolInfo: Array<IPoolInfo> = [
   {

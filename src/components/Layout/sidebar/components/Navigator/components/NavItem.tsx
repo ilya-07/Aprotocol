@@ -15,7 +15,7 @@ export function NavItem({ title, link, isActive, icon }: NavItemProps) {
       <Link
         to={link}
         className={cn(
-          "flex items-center gap-3 py-5 px-6 w-full border relative" ,
+          "flex items-center gap-3 py-5 px-3 2xl:px-6 w-full border relative duration-700",
           isActive
             ? "text-primaryS rounded-r-[60px] border-[#1B1E28] bg-[#101319] shadSidebar"
             : "text-white rounded-[60px] border-transparent"

@@ -1,11 +1,11 @@
+import { FC } from "react";
+
 import { IQuests } from "@/common/types";
 import { questsText } from "@/common/text";
-import React from "react";
+
 import Title from "@/common/components/Title";
 
-type Props = {};
-
-const QuestsData = (props: Props) => {
+const QuestsData: FC = () => {
   return (
     <section className="grid grid-cols-2 gap-[30px]">
       {questsText.map((el: IQuests, i: number) => (

@@ -1,17 +1,17 @@
-import React from "react";
+import { FC, useState } from "react";
+
 import Tabs from "./components/top/Tabs";
 import DexPoolInfo from "./components/top/poolInfo/DexPoolInfo";
 import DexWarning from "./components/warning/DexWarning";
 import DexScrore from "./components/score/DexScrore";
 import DexSwap from "./components/top/swap/DexSwap";
 
-type Props = {};
 enum Tub {
   Swap = "Swap",
   PoolInfo = "PoolInfo",
 }
-const DexSidebar = (props: Props) => {
-  const [tab, setTab] = React.useState(Tub.PoolInfo);
+const DexSidebar: FC = () => {
+  const [tab, setTab] = useState(Tub.PoolInfo);
   return (
     <div className="w-full">
       <div className="mb-[10px]">

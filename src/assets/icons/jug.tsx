@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const JugSVG = (props: Props) => {
+export const JugIcon: FC = () => {
   return (
     <svg
       width="36"
@@ -77,5 +75,3 @@ const JugSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default JugSVG;

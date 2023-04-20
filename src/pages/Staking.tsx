@@ -1,8 +1,8 @@
-import React from "react";
-import StakingPage from "@/components/staking";
-type Props = {};
+import { FC } from "react";
 
-const Staking = (props: Props) => {
+import StakingPage from "@/components/staking";
+
+const Staking: FC = () => {
   return (
     <div className="border-t border-l border-[#1b1e28] flex-grow flex justify-center items-center">
       <StakingPage />

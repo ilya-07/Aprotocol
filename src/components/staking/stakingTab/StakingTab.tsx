@@ -1,13 +1,11 @@
-import React from "react";
-
-type Props = {};
+import { FC, useState } from "react";
 
 enum Tub {
   Stake = "Stake",
   Unstake = "Unstake",
 }
-const StakingTab = (props: Props) => {
-  const [tab, setTab] = React.useState(Tub.Stake);
+const StakingTab: FC = () => {
+  const [tab, setTab] = useState(Tub.Stake);
   return (
     <article className="flex py-[8px] px-2 rounded-smR w-fit text-2xl font-semibold gap-1 bg-[#1B1E28]">
       <button

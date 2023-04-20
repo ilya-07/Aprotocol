@@ -1,11 +1,10 @@
-import React from "react";
+import { FC } from "react";
+
 import StakingTab from "./stakingTab/StakingTab";
 import StakingCulc from "./stakingData/StakingCulc/StakingCulc";
 import StakingBody from "./stakingData/StakingBody/StakingBody";
 
-type Props = {};
-
-const StakingPage = (props: Props) => {
+const StakingPage: FC = () => {
   return (
     <div className="flex flex-col items-center">
       {/* ТАБУЛЯЦИЯ ПО СТЕКИНГУ */}

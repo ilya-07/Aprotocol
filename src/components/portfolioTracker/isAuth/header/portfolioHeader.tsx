@@ -1,10 +1,9 @@
+import { FC } from "react";
+
 import { images } from "@/assets/img";
 import Title from "@/common/components/Title";
-import React from "react";
 
-type Props = {};
-
-const PortfolioHeader = (props: Props) => {
+const PortfolioHeader: FC = () => {
   return (
     <article className="flex gap-[70px] py-5 pl-7 bg-[#1B1E28] rounded-[15px] items-center">
       {/* КАРТИНКА АВАТАРА */}

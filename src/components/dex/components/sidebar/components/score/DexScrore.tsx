@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const DexScrore = (props: Props) => {
+const DexScrore: FC = () => {
   return (
     <div className="rounded-smR bg-[#1B1E28] mb-[10px] py-[22px] pl-5 pr-6 flex flex-col items-center">
       <h3 className="mb-5 text-2xl font-semibold">crypto market</h3>

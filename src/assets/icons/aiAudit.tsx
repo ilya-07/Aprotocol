@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 interface IProps {
   className?: string;
   color?: string;
 }
 
-export const AiAuditIcon = ({ className, color }: IProps) => {
+export const AiAuditIcon: FC = ({ className, color }: IProps) => {
   return (
     <svg
       width="16"

@@ -17,6 +17,7 @@
     #0b0e14;
 }
 .shadSidebar::after {
+  content: "";
   box-shadow: -3px 3px 53px 16px rgba(14, 2, 255, 0.86);
   position: absolute;
   left: 28px;

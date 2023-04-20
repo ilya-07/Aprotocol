@@ -1,8 +1,6 @@
-import React from "react";
+import { FC } from "react";
 
-type Props = {};
-
-const BnbSVG = (props: Props) => {
+export const BnbIcon: FC = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
       <g fill="none">
@@ -15,5 +13,3 @@ const BnbSVG = (props: Props) => {
     </svg>
   );
 };
-
-export default BnbSVG;

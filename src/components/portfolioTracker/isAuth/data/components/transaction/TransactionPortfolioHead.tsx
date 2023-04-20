@@ -1,9 +1,7 @@
-import React from "react";
+import { FC, useState } from "react";
 
-type Props = {};
-
-const TransactionPortfolioHead = (props: Props) => {
-  const [value, setValue] = React.useState<string>("");
+const TransactionPortfolioHead: FC = () => {
+  const [value, setValue] = useState<string>("");
   return (
     <input
       onChange={(el) => setValue(el.target.value)}

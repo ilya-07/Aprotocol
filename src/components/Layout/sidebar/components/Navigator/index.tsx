@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+
 import { useLocation } from "react-router-dom";
+
 import { RoutesType, routes } from "@/routes";
 
 import { NavItem } from "./components/NavItem";
@@ -24,11 +26,12 @@ const Navigation = () => {
 
   return (
     <nav>
-      <ul className="flex flex-col text-[18px] font-medium duration-500">
-        {Object.keys(routes).map((key) => {
+      <ul className="flex flex-col text-base xl:text-[18px] font-medium duration-500">
+        {Object.keys(routes).map((key, i) => {
           const route = routes[key as RoutesType];
           return (
             <NavItem
+              key={i}
               title={route.title}
               link={route.link()}
               isActive={key === activeTab}
