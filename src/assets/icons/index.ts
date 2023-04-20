@@ -14,3 +14,5 @@ export { FilterArrIcon } from "./filterArr";
 export { JugIcon } from "./jug";
 export { TelegramIcon } from "./telegram";
 export { TwitterIcon } from "./twitter";
+export { TableArrIcon } from "./tableArr";
+export { TableOtherIcon } from "./tableOther";

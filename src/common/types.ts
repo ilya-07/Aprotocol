@@ -1,4 +1,4 @@
-import BnbSVG from "../assets/icons/bnb";
+import { BnbIcon } from "@/assets/icons";
 
 export enum NavigationType {
   PortfolioTracker = "portfolioTracker",
@@ -28,9 +28,21 @@ export interface IQuests {
 }
 export interface IModalCurrency {
   type: string;
-  icon: typeof BnbSVG;
+  icon: typeof BnbIcon;
 }
 export interface IPoolInfo {
   price: string;
   data: string;
+}
+export interface IDexHistory<T> {
+  time: number;
+  type: string;
+  priceUsd: number;
+  priceWbnb: number;
+  amount: string;
+  totalBusd: number;
+  totalWbnb: number;
+  maker: string;
+  others: T;
+  color: "green" | "blue";
 }
