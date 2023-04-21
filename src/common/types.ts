@@ -46,3 +46,10 @@ export interface IDexHistory<T> {
   others: T;
   color: "green" | "blue";
 }
+export enum GraphicTub {
+  Minute = "5m",
+  OneHours = "1h",
+  SixHour = "6h",
+  Day = "24h",
+  Week = "7d",
+}

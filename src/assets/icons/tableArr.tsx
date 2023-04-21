@@ -1,6 +1,8 @@
 import { FC } from "react";
-
-export const TableArrIcon: FC = () => {
+interface IProps {
+  color: string;
+}
+export const TableArrIcon: FC<IProps> = ({ color }) => {
   return (
     <svg
       width="12"
@@ -11,7 +13,7 @@ export const TableArrIcon: FC = () => {
     >
       <path
         d="M1 1L5.29289 5.29289C5.68342 5.68342 6.31658 5.68342 6.70711 5.29289L11 1"
-        stroke="#575A64"
+        stroke={color}
         strokeWidth="2"
         strokeLinecap="round"
       />

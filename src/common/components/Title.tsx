@@ -8,7 +8,9 @@ interface IProps {
 const Title: React.FC<IProps> = ({ children, size }) => {
   return (
     <h2
-      className={`${size === "large" ? "text-6xl" : ""} text-5xl font-semibold`}
+      className={`${
+        size === "large" ? "text-5xl 2xl:text-6xl" : ""
+      } text-4xl 2xl:text-5xl font-semibold`}
     >
       {children}
     </h2>

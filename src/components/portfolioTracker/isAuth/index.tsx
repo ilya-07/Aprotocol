@@ -2,6 +2,7 @@ import { FC } from "react";
 
 import PortfolioHeader from "./header/portfolioHeader";
 import PortfolioData from "./data/PortfolioData";
+import { PaginatedItems } from "./pagination";
 
 const PortfolioTrackerShow: FC = () => {
   return (
@@ -14,6 +15,7 @@ const PortfolioTrackerShow: FC = () => {
         {/* ВСЕ ИНЫЕ ДАННЫЕ, ВКЛЮЧАЯ ТАБЫ */}
         <PortfolioData />
       </div>
+      <PaginatedItems />
     </section>
   );
 };

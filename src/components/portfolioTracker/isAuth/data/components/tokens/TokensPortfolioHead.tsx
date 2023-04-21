@@ -5,9 +5,11 @@ import Title from "@/common/components/Title";
 const TokensPortfolioHead: FC = () => {
   return (
     <div>
-      <div className="flex gap-[30px] mb-6 items-end">
+      <div className="flex gap-[15px] 2xl:gap-[30px] mb-6 items-end">
         <Title size="large">Actives</Title>
-        <span className="font-medium text-[30px]">261 240 496$</span>
+        <span className="font-medium text-[25px] 2xl:text-[30px]">
+          261 240 496$
+        </span>
         <span className="text-xl text-secondaryS">+2,5% (6 333 r $)</span>
       </div>
       <div className="flex gap-[30px] items-center text-20xl">

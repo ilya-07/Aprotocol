@@ -7,30 +7,30 @@ import { IDexHistory } from "@/common/types";
 
 const DexHistoryTable: FC = () => {
   return (
-    <div className="w-full">
-      <table className="w-full bg-[#1B1E28] rounded-smR ">
+    <div className="w-full overflow-x-scroll xlg:overflow-x-hidden rounded-smR scrollbar scrollbar-track-transparent scrollbar-thumb-white">
+      <table className="w-[1150px] xlg:w-full bg-[#1B1E28] rounded-smR">
         <thead className="w-full">
           <tr className="w-full grid  grid-cols-[0.8fr_0.8fr_1.2fr_1.2fr_1.2fr_1fr_1fr_1fr_0.7fr] text-left text-lg text-[#575A64] py-[17px] px-[22px]">
             <th className="flex items-center gap-2">
-              <span>Time</span> <TableArrIcon />{" "}
+              <span>Time</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Type</span> <TableArrIcon />{" "}
+              <span>Type</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Price USD</span> <TableArrIcon />{" "}
+              <span>Price USD</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Price WBNB</span> <TableArrIcon />{" "}
+              <span>Price WBNB</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Amount FWT</span> <TableArrIcon />{" "}
+              <span>Amount FWT</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Total BUSD</span> <TableArrIcon />{" "}
+              <span>Total BUSD</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th className="flex items-center gap-2">
-              <span>Total WBNB</span> <TableArrIcon />{" "}
+              <span>Total WBNB</span> <TableArrIcon color="#575A64" />{" "}
             </th>
             <th>Maker</th>
             <th>Others</th>

@@ -11,9 +11,9 @@ const PortfolioTransaction: FC = () => {
           {[1, 2].map((_, i) => (
             <div
               key={i}
-              className="grid grid-cols-4 text-xl items-center bg-[#151820] rounded-[10px] py-7 px-10"
+              className="grid grid-cols-[0.8fr_0.8fr_0.8fr_0.8fr] 2xl:grid-cols-4 text-md 2xl:text-xl items-center bg-[#151820] rounded-[10px] py-7 px-10"
             >
-              <div className="flex gap-[30px]">
+              <div className="flex gap-[15px] 2xl:gap-[30px]">
                 <span>19:24</span>
                 <span>Receive</span>
                 <span className="flex gap-[10px]">
@@ -23,7 +23,7 @@ const PortfolioTransaction: FC = () => {
                   <span>BSC</span>
                 </span>
               </div>
-              <div className="flex gap-[10px]">
+              <div className="flex gap-[5px] 2xl:gap-[10px]">
                 <span>0,11 $</span>
                 <span className="text-secondaryS">+0.000077 WETH</span>
               </div>
@@ -48,9 +48,9 @@ const PortfolioTransaction: FC = () => {
           {[1, 2, 3, 4, 5].map((_, i) => (
             <div
               key={i}
-              className="grid grid-cols-4 text-xl items-center bg-[#151820] rounded-[10px] py-7 px-10"
+              className="grid grid-cols-[0.8fr_0.8fr_0.8fr_0.8fr] 2xl:grid-cols-4 text-md 2xl:text-xl items-center bg-[#151820] rounded-[10px] py-7 px-10"
             >
-              <div className="flex gap-[30px]">
+              <div className="flex gap-[15px] 2xl:gap-[30px]">
                 <span>19:24</span>
                 <span>Receive</span>
                 <span className="flex gap-[10px]">
@@ -60,7 +60,7 @@ const PortfolioTransaction: FC = () => {
                   <span>BSC</span>
                 </span>
               </div>
-              <div className="flex gap-[10px]">
+              <div className="flex gap-[5px] 2xl:gap-[10px]">
                 <span>0,11 $</span>
                 <span className="text-secondaryS">+0.000077 WETH</span>
               </div>

@@ -13,7 +13,7 @@ const PortfolioTracker: FC = () => {
   return (
     <>
       {auth === true ? (
-        <section className="flex-grow border-t border-l border-[#1b1e28] pr-10">
+        <section className="flex-grow border-t border-l border-[#1b1e28] pr-10 pb-[95px]">
           <PortfolioTrackerShow />
         </section>
       ) : (

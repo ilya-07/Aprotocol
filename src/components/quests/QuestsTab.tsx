@@ -14,7 +14,7 @@ const QuestsTab: FC = () => {
           tab === Tub.Ongoing
             ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
             : ""
-        } py-3 px-7`}
+        } py-3 px-7 duration-500`}
         onClick={() => setTab(Tub.Ongoing)}
       >
         Ongoing
@@ -24,7 +24,7 @@ const QuestsTab: FC = () => {
           tab === Tub.Upgoing
             ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
             : ""
-        } py-3 px-7`}
+        } py-3 px-7 duration-500`}
         onClick={() => setTab(Tub.Upgoing)}
       >
         Upcoming
@@ -34,7 +34,7 @@ const QuestsTab: FC = () => {
           tab === Tub.Ended
             ? "bg-primaryS shadow-lg shadow-primaryS rounded-[10px]"
             : ""
-        } py-3 px-7`}
+        } py-3 px-7 duration-500`}
         onClick={() => setTab(Tub.Ended)}
       >
         Ended

@@ -6,7 +6,7 @@ import StakingBody from "./stakingData/StakingBody/StakingBody";
 
 const StakingPage: FC = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center py-[100px]">
       {/* ТАБУЛЯЦИЯ ПО СТЕКИНГУ */}
       <div className="mb-6">
         <StakingTab />
